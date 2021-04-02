@@ -15,10 +15,12 @@ namespace sortingAlgorithmsAnalyse
             {
                 case 0:
                     insertionSort insertion = new insertionSort();
+                    insertion.randomArray(sizeOfArray);
                     insertion.insertionSortMethod(sizeOfArray);
                     break;
                 case 1:
                     SelectionSort selection = new SelectionSort();
+                    selection.randomArray(sizeOfArray);
                     selection.selectionSortMethod(sizeOfArray);
                     break;
                 default:

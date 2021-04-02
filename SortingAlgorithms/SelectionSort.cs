@@ -2,7 +2,7 @@ using System;
 
 namespace sortingAlgorithmsAnalyse
 {
-    public class SelectionSort
+    public class SelectionSort : DataAttachmentToArray
     {
         
         private DateTime timeStart, timeFinish;
@@ -11,8 +11,6 @@ namespace sortingAlgorithmsAnalyse
         public void selectionSortMethod(int size)
         {
              int[] unsortedarr = new int[size];
-            DataAttachmentToArray attach = new DataAttachmentToArray();
-            unsortedarr = attach.randomArray(size);
 
             timeStart = DateTime.Now;
 

@@ -3,7 +3,7 @@ using System;
 
 namespace sortingAlgorithmsAnalyse
 {
-    public class insertionSort
+    public class insertionSort : DataAttachmentToArray
     {
         
         private DateTime timeStart, timeFinish;
@@ -11,8 +11,6 @@ namespace sortingAlgorithmsAnalyse
         public void insertionSortMethod(int size)
         {
              int[] unsortedarr = new int[size];
-            DataAttachmentToArray attach = new DataAttachmentToArray();
-            unsortedarr = attach.randomArray(size);
             int first, i, j;
             timeStart = DateTime.Now;
 
